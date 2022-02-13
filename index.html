@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="./favicon.jpg">
+
+  <!-- CSS 초기화 CDN 적용 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- MATERIAL DESIGN CDN 적용 -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <!-- SCROLL MAGIC -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- CSS 사용 -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- JS 사용 -->
+  <script defer src="./js/main.js"></script>
+
+</head>
+<body>
+
+  <!-- HEADER / MENU -->
+  <header>
+    <div class="container">
+      <div class="product">HSH' Portfolio</div>
+      <div class="container-menu">
+          <div class="container-item item-1">About me</div>
+          <div class="container-item item-2">Skills</div>
+          <div class="container-item item-3">Projects</div>
+          <div class="container-item item-4">Career</div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- INTRODUCTION -->
+  <section class="introduction">
+    <div class="container">
+      <div class="name">- 홍성훈 -</div>
+      <div class="job">웹 개발자 포트폴리오</div>
+      <div class="solid"></div>
+      <div class="texture">
+        <p class="margin">안녕하세요.</p>
+        <p class="margin">공부가 취미인 프론트 엔드 개발자 지망생입니다.</p>
+        <p>매우 꼼꼼한 성격, 그리고 주변에게도 전달되는 열정적인 에너지가 저의 장점입니다.</p>
+      </div>
+    </div>
+    <div class="btn learn">더 알아보기 ▽</div>
+  </section>
+
+
+  <!-- CLOCK -->
+  <section class="clock">
+    <div class="container">
+      <div id="time" class="time"></div>
+      <div id="date" class="date"></div>
+    </div>
+  </section>
+
+
+
+  <!-- ABOUT ME -->
+  <!-- 애니메이션 처리 -->
+  <section class="about-me scroll-spy">
+    <div class="container">
+      <div class="code_about_me">
+        <div class="code_name">ABOUT ME</div>
+        <div class="code_name_area"></div>
+        <div class="code_detail">
+          <div class="semi_open back-to-position to-right delay-0">
+            let HongSeungHun &equals; &lcub;
+          </div>
+          <ul class="code_contents">
+            <li class="back-to-position to-right delay-1">name &colon; &quot;홍성훈&quot;&comma;</li>
+            <li class="back-to-position to-right delay-2">age &colon; 25&comma;</li>
+            <li class="back-to-position to-right delay-3">adrres &colon; &quot;경상남도 창원시 마산&quot;&comma;</li>
+            <li class="back-to-position to-right delay-5">contact &colon; &quot;010-5560-1686&quot;&comma;</li>
+            <li class="back-to-position to-right delay-6">email &colon; &quot;hshun37@naver.com&quot;</li>
+          </ul>
+          <div class="semi_close back-to-position to-right delay-7">
+            &rcub; &semi;
+          </div>
+        </div>
+        <div class="code_job back-to-position to-right delay-8">
+          HongSeungHun.job &equals; &quot;Web Programmer
+          <span class="twinkling back-to-position to-right delay-8"></span>
+        </div>
+        <div class="code_image"></div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- SKILLS -->
+  <section class="skills">
+    <div class="container">
+      <div class="name">SKILLS</div>
+      <div class="name_area"></div>
+      <div class="item">
+          <a href="javascript:open_one();" class="skill_name btn skill-0">Language</a>
+          <a href="javascript:open_two();" class="skill_name btn skill-1">Front-end</a>
+          <a href="javascript:open_three();" class="skill_name btn skill-2">Back-end</a>
+          <a href="javascript:open_four();" class="skill_name btn skill-3">Version Control</a>
+      </div>
+      <div>
+        <img src="./img/language.jpg" alt="front-end" class="language">
+        <img src="./img/front-end.jpg" alt="front-end" class="front-end">
+        <img src="./img/back_end.jpg" alt="back-end" class="back-end">
+        <img src="./img/versioncontrol.jpg" alt="version-control" class="version-control">
+      </div>
+    </div>
+  </section>
+
+
+<!-- PROJECTS -->
+  <section class="projects scroll-spy">
+    <div class="container">
+      <div class="name">PROJECTS</div>
+      <div class="line"></div>
+      <div class="project_01">
+        <div class="box back-to-position to-right delay-1">
+          <img src="./img/overwatch_ch_page.png" alt="overwatch" class="overwatch"/>
+        </div>
+        <div class="texture back-to-position to-left delay-2">
+          <p>오버워치 캐릭터를 선택해보자!</p>
+          <p>
+            게임 선택창에서 쓰이는 애니메이션 효과를 CSS로 구현하였고 화면처리 효과는 순전히<br> 
+            자바스크립트에서만 쓰인다는 편견을 버리고자 만들게 되었습니다. 본격적인 <br>
+            자바스크립트를 학습하기전에 CSS에 대해서 더욱 알고 싶어서 만들게 되었습니다.<br>
+          </p>
+          <div class="line"></div>
+          <a href="./overwatch/index.html" class="ch">오버워치 캐릭터 3D 뷰</a>
+          <p class="skill">
+            &lt; 사용기술 &gt;<br>
+            HTML, CSS
+          </p>
+        </div>
+      </div>
+
+
+      <div class="project_02">
+        <div class="box back-to-position to-right delay-4">
+          <img src="./img/starbucks_page.png" alt="starbucks" class="starbucks">
+        </div>
+        <div class="texture back-to-position to-left delay-3">
+          <p>스타벅스 웹사이트</p>
+          <p>
+            오버워치 캐릭터 3D 뷰에서 학습한 HTML과 CSS를 사용하고 거기에 더해 자바스크립트<br>
+            를 활용 하도록 하였습니다. 본격적으로 자바스크립트를 사용하는 단계인 만큼 몇가지  <br>
+            라이브러리를 사용하였으며 DOM을 사용하는 방법에 대해 학습하는 계기가 되었습니다.<br>
+          </p>
+          <div class="line"></div>
+          <a href="./img/starbucks_page.png" class="star">스타벅스 공식홈페이지 클론</a>
+          <p class="skill">
+            &lt; 사용기술 &gt;<br>
+            HTML, CSS, Javascript
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <footer>
+
+  </footer>
+
+
+
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+
+</body>
+</html>
